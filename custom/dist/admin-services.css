@@ -1,0 +1,72 @@
+.ep-services-desc,
+.ServicesWrapper {
+  max-width: 550px;
+  padding: 1rem;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  min-width: 500px;
+}
+
+.ServicesElements {
+  list-style: none;
+}
+.ServicesElements > li {
+  position: relative;
+}
+.ServicesElements > li:not(:last-child) {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.flexNamePrice {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+.flexNamePrice .components-base-control {
+  flex-grow: 1;
+}
+.flexNamePrice .components-base-control__field {
+  margin-bottom: 0;
+}
+.flexNamePrice .flexNamePrice__Number {
+  flex: 0 0 120px;
+  margin-left: 1rem;
+}
+
+.saveAddNew {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.servicesTitle {
+  border-top: solid 1px #ddd;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.ep-services-wrap {
+  display: flex;
+}
+.ep-services-wrap .ep-services-desc {
+  margin-left: 20px;
+  width: 500px;
+}
+
+.heading-setting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.heading-setting .form-input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=admin-services.css.map*/

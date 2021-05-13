@@ -1,0 +1,65 @@
+.ep-services-desc,
+.ServicesWrapper {
+  min-width: 500px;
+  max-width: 550px;
+  padding: 1rem;
+  border: solid 1px #ddd;
+  background-color: #fff;
+}
+
+.ServicesElements {
+  list-style: none;
+
+  > li {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: solid 1px #ddd;
+    }
+  }
+}
+
+.flexNamePrice {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8px;
+
+  .components-base-control {
+    flex-grow: 1;
+  }
+
+  .components-base-control__field {
+    margin-bottom: 0;
+  }
+
+  .flexNamePrice__Number {
+    flex: 0 0 120px;
+    margin-left: 1rem;
+  }
+}
+
+.saveAddNew {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid 1px #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.servicesTitle {
+  border-top: solid 1px #ddd;
+  margin-bottom: 1rem;
+  padding-top: .5rem;
+}
+
+.ep-services-wrap {
+  display: flex;
+
+  .ep-services-desc {
+    margin-left: 20px;
+    width: 500px;
+  }
+}

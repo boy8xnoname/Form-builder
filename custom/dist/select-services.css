@@ -1,0 +1,388 @@
+
+/**
+* Font-faces setup
+*/
+
+/* // font-family: 'DelimaMT5'; */
+/* // Weight:300 */
+@font-face {
+    font-family: 'DelimaMT5';
+    src: url('../../dist/fonts/DelimaMT-Light.woff2') format('woff2'),    
+         url('../../dist/fonts/DelimaMT-Light.woff') format('woff'),
+         url('../../dist/fonts/DelimaMT-Light.ttf') format('ttf'),
+         url('../../dist/fonts/DelimaMT-Light.woff') format('svg'),
+         url('../../dist/fonts/DelimaMT-Light.woff') format('eot');
+    font-weight: 300;
+    font-style: normal;
+}
+/* // Weight:400 */
+@font-face {
+    font-family: 'DelimaMT5';
+    src: url('../../dist/fonts/DelimaMT-Regular.woff2') format('woff2'),    
+         url('../../dist/fonts/DelimaMT-Regular.woff') format('woff'),
+         url('../../dist/fonts/DelimaMT-Regular.ttf') format('ttf'),
+         url('../../dist/fonts/DelimaMT-Regular.woff') format('svg'),
+         url('../../dist/fonts/DelimaMT-Regular.woff') format('eot');
+    font-weight: 400;
+    font-style: normal;
+}
+/* // Weight:500 */
+@font-face {
+    font-family: 'DelimaMT5';
+    src: url('../../dist/fonts/DelimaMT-SemiBold.woff2') format('woff2'),    
+         url('../../dist/fonts/DelimaMT-SemiBold.woff') format('woff'),
+         url('../../dist/fonts/DelimaMT-SemiBold.ttf') format('ttf'),
+         url('../../dist/fonts/DelimaMT-SemiBold.woff') format('svg'),
+         url('../../dist/fonts/DelimaMT-SemiBold.woff') format('eot');
+    font-weight: 500;
+    font-style: normal;
+}
+/* // Weight:700 */
+@font-face {
+    font-family: 'DelimaMT5';
+    src: url('../../dist/fonts/DelimaMT-Bold.woff2') format('woff2'),    
+         url('../../dist/fonts/DelimaMT-Bold.woff') format('woff'),
+         url('../../dist/fonts/DelimaMT-Bold.ttf') format('ttf'),
+         url('../../dist/fonts/DelimaMT-Bold.woff') format('svg'),
+         url('../../dist/fonts/DelimaMT-Bold.woff') format('eot');
+    font-weight: 700;
+    font-style: normal;
+}
+/* // Weight:900 */
+@font-face {
+    font-family: 'DelimaMT5';
+    src: url('../../dist/fonts/DelimaMT-ExtraBold.woff2') format('woff2'),    
+         url('../../dist/fonts/DelimaMT-ExtraBold.woff') format('woff'),
+         url('../../dist/fonts/DelimaMT-ExtraBold.ttf') format('ttf'),
+         url('../../dist/fonts/DelimaMT-ExtraBold.woff') format('svg'),
+         url('../../dist/fonts/DelimaMT-ExtraBold.woff') format('eot');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* // ITCAvantGardeGothicStd */
+/* // Weight:Normal */
+@font-face {
+    font-family: 'ITCAvantGardeGothicStd';
+    src: url('../../dist/fonts/ITCAvantGardeStd-Md.woff2') format('woff2'),    
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('woff'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.ttf') format('ttf'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('svg'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ITCAvantGardeGothicStd';
+    src: url('../../dist/fonts/ITCAvantGardeStd-Md.woff2') format('woff2'),    
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('woff'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.ttf') format('ttf'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('svg'),
+        url('../../dist/fonts/ITCAvantGardeStd-Md.woff') format('eot');
+    font-weight: 400;
+    font-style: normal;
+}
+/* // Weight:500 */
+@font-face {
+    font-family: 'ITCAvantGardeGothicStd';
+    src: url('../../dist/fonts/ITCAvantGardeStd-Demi.woff2') format('woff2'),    
+        url('../../dist/fonts/ITCAvantGardeStd-Demi.woff') format('woff'),
+        url('../../dist/fonts/ITCAvantGardeStd-Demi.ttf') format('ttf'),
+        url('../../dist/fonts/ITCAvantGardeStd-Demi.woff') format('svg'),
+        url('../../dist/fonts/ITCAvantGardeStd-Demi.woff') format('eot');
+    font-weight: 500;
+    font-style: normal;
+}
+/* // Weight:700 */
+@font-face {
+    font-family: 'ITCAvantGardeGothicStd';
+    src: url('../../dist/fonts/ITCAvantGardeStd-Bold.woff2') format('woff2'),    
+         url('../../dist/fonts/ITCAvantGardeStd-Bold.woff') format('woff'),
+         url('../../dist/fonts/ITCAvantGardeStd-Bold.ttf') format('ttf'),
+         url('../../dist/fonts/ITCAvantGardeStd-Bold.woff') format('svg'),
+         url('../../dist/fonts/ITCAvantGardeStd-Bold.woff') format('eot');
+    font-weight: 700;
+    font-style: normal;
+}
+.ep-dental-financial-custom-services{
+    font-family: 'ITCAvantGardeGothicStd';    
+}
+.ep-dental-financial-custom-services .heading h2.main-title {
+    color: #0F3D34;
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.ep-dental-financial-custom-services .heading .sub-title {
+    color: #0F3D34;
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 16px;
+}
+
+.ep-dental-financial-custom-services .price-from {
+    color: #FB634F;
+    font-family: 'ITCAvantGardeGothicStd';
+    margin-bottom: 60px;
+}
+
+.ep-dental-financial-custom-services .price-from label {
+    text-transform: uppercase;
+}
+
+.ep-dental-financial-custom-services .price-from .price-from-main {
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.ep-dental-financial-custom-services .price-from .total-time-apply {
+    text-transform: uppercase;
+}
+
+.ep-dental-financial-custom-services .main-content .description {
+    color: #297F6D;
+    font-family: 'ITCAvantGardeGothicStd';
+    margin-bottom: 40px;
+}
+
+.epService__list {
+    list-style: none;
+    padding: 0;
+}
+
+.epService__list .epService__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+.epService__list .epService__item.is-active .epService__itemMainTitle {
+    font-family: 'ITCAvantGardeGothicStd';
+    font-weight: 500;
+    color: #0F3D34;
+}
+
+.epService__list .epService__item.is-active .epService__itemWrap p {
+    font-family: 'ITCAvantGardeGothicStd';
+    color: #0F3D34;
+    font-weight: 400;
+}
+
+.epService__list .epService__itemMainTitle {
+    color: #297F6D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'ITCAvantGardeGothicStd';
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck {
+    cursor: pointer;
+    min-width: 25px;
+    margin-right: 10px;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck .input-label {
+    content: "";
+    padding-left: 30px;
+    position: relative;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck .input-label::before {
+    border: 1px solid #297F6D;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck input[type="checkbox"]:checked+.input-label::before {
+    border-color: #0F3D34;
+    background-color: #0F3D34;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck input[type="checkbox"]:checked+.input-label::before {
+    content: "\2713";
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+}
+
+.epService__list .epService__itemMainTitle .epService__itemCheck label {
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.epService__list .epService__itemWrap {
+    padding-left: 30px;
+}
+
+.epService__list .epService__itemWrap p {
+    color: #297F6D;
+    font-size: 18px;
+    font-family: 'ITCAvantGardeGothicStd';
+}
+
+.epService__list .epService__borderBetween {
+    content: "";
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    min-width: 30px;
+}
+
+.epService__list .epService__borderBetween::before {
+    background-color: #0F3D34;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+}
+
+.epService__list .epService__itemPrice {
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 18px;
+    padding-left: 10px;
+    min-width: 115px;
+    text-align: right;
+}
+
+.epService__list .epService__itemPrice p {
+    font-family: 'ITCAvantGardeGothicStd';
+    margin: 0;
+}
+
+.epService__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.epService__buttons .epService__total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.epService__buttons .epService__total label {
+    color: #FB634F;
+    font-size: 14px;
+    font-family: 'ITCAvantGardeGothicStd';
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.epService__buttons .epService__total .total-price {
+    color: #FB634F;
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 30px;
+}
+
+.epService__buttons .epService__total small {
+    color: #297F6D;
+}
+
+.epService__buttons button.button {
+    border: none;
+    -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #FB634F;
+    color: #fff;
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 40px;
+    height: 60px;
+}
+
+.epService__buttons button.button:hover {
+    background-color: #d34836;
+}
+
+.about-ep-dental {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+.about-ep-dental h3 {
+    color: #297F6D;
+    font-family: 'ITCAvantGardeGothicStd';
+    font-size: 16px;
+}
+
+.about-ep-dental p {
+    color: #297F6D;
+    font-size: 12px;
+    font-family: 'ITCAvantGardeGothicStd';
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .ep-dental-financial-custom-services .heading {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .ep-dental-financial-custom-services .heading .heading-main-title {
+
+    }
+
+    .ep-dental-financial-custom-services .heading .heading-logo img {
+        max-width: 100px;
+        height: auto;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }

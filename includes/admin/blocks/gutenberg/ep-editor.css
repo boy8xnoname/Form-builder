@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.ep-block {
+    background-color: #1d7071;
+    color: #FFF;
+    font-family: Verdana, Arial, Helvetica,  sans-serif;
+    padding: 10px;
+}
+
+.ep-block > p, .ep-block > h4 {
+    color: #FFF !important;
+    margin: 2px !important;
+}

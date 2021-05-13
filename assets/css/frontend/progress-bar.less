@@ -1,0 +1,363 @@
+@import "variables";
+
+#multi-step-form {
+	.fw-progress-wrap {
+		color: @color_text;
+		max-width: 1800px;
+		position: relative;
+        margin: 0px;
+        &.show-title-off {
+            min-height: 15px;
+        }
+        
+        &.show-title-on {
+            min-height: 55px;
+        }
+	}
+
+	.fw-hide-progress-bar {
+		display: none;
+	}
+
+	.fw-progress-bar-container {
+        min-height: 15px;
+	    margin-bottom: 10;
+	}
+
+	.fw-progress-bar {
+        position: relative;
+	    margin: 0 !important;
+	    padding: 0;
+		.fw-progress-step {
+			color: @color_text;
+			display: block;
+			font-size: 1.4em;
+			padding: 2px 0px 2px 0;
+			position: relative;
+			margin-bottom:10px;
+	        &.fw-active {
+	            color: @color_text;
+			    font-weight: bold;
+			    &:before {
+				    z-index: 1;
+			    }
+	        }
+	        &.fw-visited {
+	            z-index: 1;		
+	        }	  
+		}
+		a {
+			color: @color_text;
+			font-size: 16px;
+			font-weight: 600;
+			text-decoration: none;
+		}
+	}
+}
+
+
+/* ------------------------------------------------------------------------*/
+/* ---- Animations --------------------------------------------------------*/
+/* ------------------------------------------------------------------------*/
+
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+	@-o-keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+	-o-animation: @arguments;
+}
+
+#multi-step-form .fw-active {
+    .fw-progress-bar-bar {
+        width: calc(~"85% - 63px");
+        .keyframes(progress-bar-animation;{
+		    0%   {width: 0%;}
+            100% {width: calc(~"85% - 63px");}
+        });
+       .animation(progress-bar-animation 1s ease-out)
+    }
+}
+
+@media all and (max-width: 480px) {
+	#multi-step-form {
+    .fw-progress-bar {
+	    .fw-progress-step {
+		    padding: 10px 20px 0px 60px !important;
+            min-height: 30px;
+            font-size: 16px;
+	    }
+    }
+	}
+}
+
+@media all and (max-width: 769px) {
+	#multi-step-form {   
+        .fw-progress-bar {
+            display: flex;
+            flex-direction: row;
+            .fw-progress-step {
+                flex-grow: 1;
+                display: inline-block;
+                float: left;
+                margin: 0;
+                padding: 2px 0 2px 0 !important;
+                text-align: left;
+                width: 20%;
+                position: relative;
+                &:after {
+                    content: "";
+                    background-size: 35px 35px;
+                    margin: 0 auto;
+                    padding: 0;
+                    height: 5px;
+                    width: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    z-index: 0;
+                }          
+                &.fw-active {
+                    &:last-child {                    
+                        .fw-progress-bar-bar {
+                            display: none;
+                        }
+                    }
+                    .fw-progress-bar-bar {
+                        height: 5px;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                    }
+                }
+                &.fw-visited {
+                    background: none;                
+                    &:after {
+                        background-size: 35px 35px;
+                        content: "";
+                        height: 5px;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        z-index: 0;
+                    }
+                }
+                .fw-txt-ellipsis {
+                    font-size: 14px;              
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    padding-top: 10px;
+                }
+                .fw-txt-ellipsis[data-title] {
+                    &:hover {
+                        &:after {
+                            content: attr(data-title);
+                            font-size: 16px;
+                            font-weight:500;
+                            color: #fff;
+                            letter-spacing:0.02em;
+                            position: absolute;
+                            left: -20px;
+                            top: 100%;
+                            z-index: 20;
+                            background:#aaa;
+                            white-space: nowrap;
+                            padding:15px 20px 15px 20px;
+                            box-sizing:border-box;
+                            -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                            -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                            box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                        }
+                        &:before {
+                            content: ' ';
+                            position: absolute;
+                            border: 10px solid #aaa;
+                            border-color: transparent;
+                            border-bottom-color: #aaa;
+                            border-bottom-width: 13px;
+                            top: calc(~"100% - 22px");
+                            left: 15px;
+                        }
+                    }
+                }
+                .fw-circle, .fw-circle-1, .fw-circle-2 {
+                    position: absolute;
+                    top: -52px;
+                    left: 65px;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    z-index: 2;
+                }
+                .fw-circle-1 {
+                    left: 82px;
+                }
+                .fw-circle-2 {
+                    left: 99px;
+                }
+                &:nth-child(n+6) {
+                    display: none;
+                }
+                &:last-child {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    
+}
+
+@media all and (min-width: 769px) {
+	#multi-step-form {
+    &.fw-large-container {
+        .fw-progress-bar-container {
+            margin-bottom: 0;
+            width: 100%;
+            padding:0px;
+        }
+        .fw-progress-bar {
+            display: flex;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 0;
+            position: absolute;
+            width: 100%;
+            .show-title-off {
+                overflow: hidden;
+                height: 5px;
+            }
+            &.show-title-on {
+                min-height: 55px;
+            }
+            .fw-progress-step {
+                display: inline-block;
+                float: left;
+                flex: 1;
+                margin: 0;
+                padding: 2px 0 2px 0;
+                text-align: left;
+                // width: 20%;
+                &:after {
+                    content: "";
+                    background-size: 35px 35px;
+                    margin: 0 auto;
+                    padding: 0;
+                    height: 5px;
+                    width: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    z-index: 0;
+                }          
+                &.fw-active {
+                    &:last-child {                    
+                        .fw-progress-bar-bar {
+                            display: none;
+                        }
+                    }
+                    .fw-progress-bar-bar {
+                        height: 5px;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                    }
+                }
+                &.fw-visited {
+                    background: none;                
+                    &:after {
+                        background-size: 35px 35px;
+                        content: "";
+                        height: 5px;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        z-index: 0;
+                    }
+                }
+                .fw-txt-ellipsis {
+                    font-size: 14px;              
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    padding-top: 10px;
+                }
+                .fw-txt-ellipsis[data-title] {
+                    &:hover {
+                        &:after {
+                            content: attr(data-title);
+                            font-size: 16px;
+                            font-weight:500;
+                            color: #fff;
+                            letter-spacing:0.02em;
+                            position: absolute;
+                            left: -20px;
+                            top: 100%;
+                            z-index: 20;
+                            background:#aaa;
+                            white-space: nowrap;
+                            padding:15px 20px 15px 20px;
+                            box-sizing:border-box;
+                            -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                            -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                            box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+                        }
+                        &:before {
+                            content: ' ';
+                            position: absolute;
+                            border: 10px solid #aaa;
+                            border-color: transparent;
+                            border-bottom-color: #aaa;
+                            border-bottom-width: 13px;
+                            top: calc(~"100% - 22px");
+                            left: 15px;
+                        }
+                    }
+				}
+				.fw-circle, .fw-circle-1, .fw-circle-2 {
+					position: absolute;
+					top: -52px;
+					left: 65px;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					z-index: 2;
+				}
+				.fw-circle-1 {
+					left: 82px;
+				}
+				.fw-circle-2 {
+					left: 99px;
+				}
+				&:nth-child(n+6) {
+					display: none;
+				}
+				&:last-child {
+					display: inline-block;
+				}
+            }
+		}
+    }
+	}
+}
+
+@media all and (min-width: 1023px) {
+	#multi-step-form {
+    .fw-progress-bar-container {
+        margin-top: 0;
+    }
+	}
+}
